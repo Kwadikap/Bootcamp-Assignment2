@@ -1,0 +1,179 @@
+body {
+    background-color: whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button {
+    margin-left: 34%;
+    margin-top: 20%;
+    padding: 10px 18px 10px;
+    background-color: rgb(64, 64, 218);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(64, 64, 218);
+    filter: opacity(80%);
+}
+
+button:hover {
+    background-color: rgb(233, 44, 44);
+    border: 1px solid rgb(233, 64, 218);
+}
+
+.block1 {
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    border-radius: 8px;
+    /*border: 2px solid black; */
+    background-image: url("./spider-man-no-way-home-spider-man-trailer.jpeg");
+}
+
+.pic {
+    width: 25%;
+   /* border: 2px solid black; */
+    float: left;
+    margin-left: 5%;
+    margin-top: 1%;
+    
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px blueviolet;
+    filter: opacity(70%);
+}
+
+.block2-img, .block3-img, .block4-img{
+    width: 400px;
+}
+
+.block2{
+    margin-top: 50px;
+}
+
+.block2-img {
+    height: 550px;
+    filter: opacity(100%);
+    float: left;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.caption{
+    width: 50%;
+    float: right;
+}
+
+.head1{
+    text-align: left;
+    color: rgb(102, 33, 167);
+}
+
+.head2{
+    text-align: left;
+    padding-top: 15%;
+    color: rgb(102, 33, 167);
+    
+}
+
+
+p{
+    text-align: left;
+    line-height: 26px;
+    font-size: 20px;
+    word-spacing: 2px;
+}
+
+.block3{
+    margin-top: 800px;
+}
+
+.block3-img {
+    height: 650px;
+    filter: opacity(100%);
+    float: left;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.block4{
+    margin-top: 1600px;
+}
+
+.block4-img {
+    height: 650px;
+    filter: opacity(100%);
+    float: left;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.trailer-block {
+    margin-top: 2290px;
+    background-color: black;
+}
+
+.trailer-block > h1 {
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(136, 67, 201);
+    text-shadow: 4px 4px 5px gray;
+    
+}
+
+.trailer {
+    width: 100%;
+    height: 620px;
+    box-shadow: 0px 0px 0px grey;
+    border-radius: 7px;
+}
+
+
+.block5 {
+    margin-top: 200px;
+}
+
+.block5 > h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: rgb(6, 6, 209);
+    text-shadow: 4px 4px 5px rgb(177, 11, 11);
+    filter: opacity(90%);
+}
+
+.block6 {
+    margin-top: 200px;
+   
+}
+
+.block6 > h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: rgb(177, 11, 11);
+    text-shadow: 3px 3px 5px rgb(163, 126, 3);
+    filter: opacity(90%);
+}
+
+.block7 {
+    margin-top: 200px;
+}
+
+.block7 > h1 {
+    font-style: italic;
+    text-align: center;
+    font-size: 70px;
+    letter-spacing: 3px;
+    color: rgb(214, 209, 209);
+    text-shadow: 4px 4px 5px rgb(102, 102, 102);
+    filter: opacity(90%);
+}
+
+
+
