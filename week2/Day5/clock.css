@@ -1,0 +1,120 @@
+.box1 {
+    background-color: orange;
+    height: 550px;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.box1 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.sub {
+    border: 2px solid blue;
+    background-color: blue;
+    filter: opacity(50%);
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 50%;
+    text-align: center;
+}
+
+.sub > a, .sub > p {
+    display: block;
+    color: white;
+}
+
+.sub > button {
+    margin: 2% 0%;
+}
+
+
+.box2 {
+    width: 70%;
+    height: 700px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+
+.box2 > .clock {
+    width: 60%;
+    height:80%;
+    margin: 7% 20%;
+}
+
+.box2 {
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgb(32, 102, 134), rgb(67, 217, 223));
+}
+
+.black-dot {
+    border-radius: 50%;
+    width: 2%;
+    height: 3%;
+    background-color: black;
+    position:absolute;
+    top: 48.5%;
+    left: 48.5%;
+}
+
+.hour-hand, .minute-hand {
+    width: 18%;
+    height: 100px;
+    position: absolute;
+    top: 43%;
+    left: 49.5%;
+}
+
+.hour-hand {
+    top: 43%;
+}
+
+.minute-hand {
+    width: 20%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+    
+.hour-hand > img, .minute-hand > img {
+    width: 100%;
+    height: 100%;
+}
+
+.hour-hand {
+    animation-name: hour;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.minute-hand {
+    animation-name: minute;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+
+@keyframes minute {
+    100% {
+        transform-origin: left;
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes hour {
+    0% {
+        transform-origin: left;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: left;
+        transform: rotate(30deg);
+    }
+}
