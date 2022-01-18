@@ -64,7 +64,7 @@ than Lucas’ BMI (${lucasBMI}), that is True!"` );
 
 
 // Assignment part C
-const userInput = parseInt(prompt("Type a number"));
+const userInput = Number(prompt("Type a number"));
 
 
 if(!userInput){
