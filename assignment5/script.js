@@ -48,7 +48,7 @@ const johnHeight = prompt("Just one more thing John, what's your height?");
 
 const johnBMI = johnWeight / (johnHeight ** 2);
 
-const lucasWeight = prompt("Hey Lucas what's your BMI ? ");
+const lucasWeight = prompt("Hey Lucas what's your weight ? ");
 
 const lucasHeight = prompt("Just one more thing Lucas, what's your height?");
 
