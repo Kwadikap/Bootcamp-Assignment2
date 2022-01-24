@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="block nav-block">
+            <h2 class="logo">FreedomNET</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for people, places and much more">
+            </div>
+            <div class="profile-pic">
+                <img src="./images/profile-pics/pp1.jpeg">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container block">
+        <div class="left-side">
+            <!-- left side profile picture -->
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="./images/profile-pics/pp1.jpeg">
+                </div>
+                <h3 class="profile-name">Sally May</h3>
+                <p class="profile-tag">@smay</p>
+            </div>
+            <!-- left side bar-->
+            <div class="side-bar">
+                <ul>
+                    <div class="side-bar-links link-top"><a class="side-bar-links" href=""><i class="uil uil-house-user"></i> <h3>&nbsp&nbspHome</h3></a></div>
+                    <div class="side-bar-links"><a class="side-bar-links" href=""><i class="uil uil-compass"></i> <h3>&nbsp&nbspExplore</h3></a></div>
+                    <div class="side-bar-links"><a class="side-bar-links" href=""><i class="uil uil-comments-alt"></i> <h3>&nbsp&nbspMessages</h3></a></div>
+                    <div class="side-bar-links"><a class="side-bar-links" href=""><i class="uil uil-bell"></i> <h3>&nbsp&nbspNotifications</h3></a></div>
+                    <div class="side-bar-links link-bottom"><a class="side-bar-links" href=""><i class="uil uil-setting"></i> <h3>&nbsp&nbspSettings</h3></a></div>
+                </ul>
+            </div>
+            <div class="createPostBtn">
+                <button>Create Post</button>
+            </div>
+        </div>
+        <!-- Middle bar -->
+        <div class="middle">
+            <div class="stories">
+                <div class="story">
+                    <img class="story-img" src="./images/stories/story2.jpeg">
+                    <p>Your <br>Story</p>
+                </div>
+                <div class="story">
+                    <img class="story-img" src="./images/stories/story3.jpeg">
+                    <p>Lizzie</p>
+                </div>
+                <div class="story">
+                    <img class="story-img" src="./images/stories/story6.jpeg">
+                    <p>Thomas</p>
+                </div>
+                <div class="story">
+                    <img class="story-img" src="./images/stories/story5.jpeg">
+                    <p>Jackie</p>
+                </div>
+                <div class="story">
+                    <img class="story-img" src="./images/stories/story7.jpeg">
+                    <p>William</p>
+                </div>
+            </div>
+            <div class="post-bar">
+                <div class="post-pic">
+                    <img src="./images/profile-pics/pp1.jpeg">
+                </div>
+                <input type="text" placeholder="What's on your mind, Sally?">
+                <button class="post-btn" id="post-button">Post</button>
+            </div>
+            <!-- POST 1 -->
+            <!-- Regular Post -->
+            <div class="post" id="current-post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp2.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">William</h3>
+                        <p class="time-posted">15 MINUTES AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/williams-post1.jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="post-liked-by">
+                        <div class="post-liked-by-img1 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp3.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img2 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp4.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img3 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp5.jpeg" >
+                        </div>
+                        <p>Liked by <b>Sarah Martin</b> and <b>1,235 others</b></p>
+                    </div>
+                    <p class="post-caption"><b>William</b> Congratulations! to Sarah for finally getting her dream car</p>
+                    <p class="view-all-comments">View all 116 comments</p>
+                </div>
+            </div>
+
+            <!-- POST 2 -->
+            <!-- Meme Post -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp6.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">lol_Memes</h3>
+                        <p class="time-posted">45 MINUTES AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/memes/Cat Meme Netflix Funny .jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="like-count">
+                        <p><b>504 Likes</b></p>
+                    </div>
+                    <p class="post-caption"><b>lol_Memes</b> Me everytime...</p>
+                    <p class="view-all-comments">View all 87 comments</p>
+                </div>
+            </div>
+
+            <!-- POST 3 -->
+            <!-- Regular post -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/Thomas-pp.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">Thomas</h3>
+                        <p class="time-posted">2 HOURS AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/vacation-post.jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="post-liked-by">
+                        <div class="post-liked-by-img1 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp2.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img2 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp3.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img3 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp5.jpeg" >
+                        </div>
+                        <p>Liked by <b>Lizzie</b> and <b>2,455 others</b></p>
+                    </div>
+                    <p class="post-caption"><b>Thomas</b> Costa Rica is officially paradise&#127796;</p>
+                    <p class="view-all-comments">View all 207 comments</p>
+                </div>
+            </div>
+
+            <!-- POST 4 -->
+            <!-- Regular post -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp5.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">John Smith</h3>
+                        <p class="time-posted">3 HOURS AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/post4.jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="post-liked-by">
+                        <div class="post-liked-by-img1 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp3.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img2 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp4.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img3 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp5.jpeg" >
+                        </div>
+                        <p>Liked by <b>Lizzie</b> and <b>75 others</b></p>
+                    </div>
+                    <p class="post-caption"><b>John Smith</b> Isn't he just the cutest&#129402</p>
+                    <p class="view-all-comments">View all 16 comments</p>
+                </div>
+            </div>
+
+            <!-- POST 5 -->
+            <!-- Video Post -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp7.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">memeViral</h3>
+                        <p class="time-posted">4 HOURS AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing video-body">
+                    <video src="./Videos/thanks-alot-you-IDIOT!-meme.mp4" controls></video>
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="like-count">
+                        <p><b>3,542 Likes</b></p>
+                    </div>
+                    <p class="post-caption"><b>memeViral</b> Thanks a lot you IDIOT! &#128514&#128514&#128514</p>
+                    <p class="view-all-comments">View all 768 comments</p>
+                </div>
+            </div>
+
+             <!-- POST 6 -->
+            <!-- Meme Post -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp6.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">lol_Memes</h3>
+                        <p class="time-posted">4 HOURS AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/memes/meme4.jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="like-count">
+                        <p><b>5,255 Likes</b></p>
+                    </div>
+                    <p class="post-caption"><b>lol_Memes</b> LMAOOO!!!&#128514&#128514&#128514</p>
+                    <p class="view-all-comments">View all 2,700 comments</p>
+                </div>
+            </div>
+
+            <!-- POST 7 -->
+            <div class="post">
+                <div class="post-head post-sizing">
+                    <div class="img-div">
+                        <img class="profile-pic" src="./images/profile-pics/pp8.jpeg">
+                    </div>
+                    <div class="name-time">
+                        <h3 class="person-Name">Jackie</h3>
+                        <p class="time-posted">5 HOURS AGO</p>
+                    </div>
+                </div>
+                <div class="post-body post-sizing">
+                    <img src="./images/posts/post5.jpeg">
+                </div>
+                <div class="post-footer post-sizing">
+                    <div class="post-icons">
+                        <i class="uil uil-heart icon-1">
+                        <i class="uil uil-comment-dots icon-2"></i>
+                        <i class="uil uil-share-alt icon-3"></i></i>
+                    </div>
+                    <div class="post-liked-by">
+                        <div class="post-liked-by-img1 profile-pic-smaller">
+                            <img src="./images/stories/story3.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img2 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp4.jpeg" >
+                        </div>
+                        <div class="post-liked-by-img3 profile-pic-smaller">
+                            <img src="./images/profile-pics/pp2.jpeg" >
+                        </div>
+                        <p>Liked by <b>William</b> and <b>560 others</b></p>
+                    </div>
+                    <p class="post-caption"><b>Jackie</b> I can't wait to visit again!</p>
+                    <p class="view-all-comments">View all 68 comments</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="message-header">
+                <h3>Messages</h3>
+                <i class="uil uil-edit"></i>
+            </div>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search message">
+            </div>
+            <div class="message-sections">
+                <div class="message-primary" id="message-primary"><h4>Primary</h4></div>
+                <div class="message-general" id="message-general"><h4>General</h4></div>
+                <div class="message-requests" id="message-requests"><h4>Requests(7)</h4></div>
+            </div>
+            <div class="message-section-selector">
+                <div class="select-primary" id="highlight-primary"></div>
+                <div class="select-general" id="highlight-general"></div>
+                <div class="select-requests" id="highlight-requests"></div>
+            </div>
+            <div class="messages" id="messages">
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon1">
+                        <img src="./images/profile-pics/pp2.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">William&#128525;</h3>
+                    <p class="message" id="message">Hey did you get my text?</p>
+                </div>
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon2">
+                        <img src="./images/profile-pics/pp4.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">Amanda&#128129&#11088;
+                    </h3>
+                    <p class="message" id="message">UGH! guys are so irritating!&#128544;</p>
+                </div>
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon3">
+                        <img src="./images/profile-pics/pp5.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">John Smith</h3>
+                    <p class="message" id="message">Goodmorning Sally&#128578</p>
+                </div>
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon4">
+                        <img src="./images/profile-pics/pp3.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">James</h3>
+                    <p class="message">lol don't do that</p>
+                </div>
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon5">
+                        <img src="./images/profile-pics/sarahpp.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">Sarah&#129419;</h3>
+                    <p class="message">I got a new car!!!&#128518;	</p>
+                </div>
+                <div class="message1">
+                    <div class="profile-pic profile-img message-icon message-icon6">
+                        <img src="./images/profile-pics/pp8.jpeg">
+                    </div>
+                    <h3 class="profile-name message-profile-name">Jackie</h3>
+                    <p class="message">I dont know wat to dooooo</p>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+    <!-- Code for general messages page -->
+    <div class="general-messages-display">
+        <div class="messages" id="general-messages">
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon1">
+                    <img src="./images/profile-pics/pp2.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">William&#128525;</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon2">
+                    <img src="./images/profile-pics/pp4.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">Amanda&#128129&#11088;
+                </h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon3">
+                    <img src="./images/profile-pics/pp5.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">John Smith</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon4">
+                    <img src="./images/profile-pics/pp3.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">James</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon5">
+                    <img src="./images/profile-pics/sarahpp.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">Sarah&#129419;</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon6">
+                    <img src="./images/profile-pics/pp8.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">Jackie</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon7">
+                    <img src="./images/profile-pics/Thomas-pp.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">Thomas</h3>
+            </div>
+            <div class="message1">
+                <div class="profile-pic profile-img message-icon message-icon7">
+                    <img src="./images/stories/story3.jpeg">
+                </div>
+                <h3 class="profile-name message-profile-name genMessageProfile">Lizzie</h3>
+            </div>
+         </div>
+    </div>
+
+    <!-- CREATE POST MODAL WINDOW -->
+    <div class="post-modal-outter block" id="post-modal-outter">
+        <div class="post-modal-inner">
+            <div class="upload-status" id="upload-status"><p>Upload Status</p></div>
+            <div class="upload-picture"><p>Upload Picture</p></div>
+            <div class="upload-video"><p>Upload Video</p></div>
+            <button class="close-post" id="close-post">Back</button>
+        </div>
+    </div>
+
+    <!-- UPLOAD STATUS MODAL WINDOW -->
+    <div class="upload-status-modal-outter block" id="status-modal-outter">
+        <div class="upload-status-modal-inner">
+                <input type="text" placeholder="Type here..." id="status" class="status">
+                <button class="close-post upload-status-button" id="upload-status-go-back-btn">Back</button>
+                <button class="close-post upload-status-button" id="upload-status-button">Post</button>
+        </div>
+    </div>
+
+    <!-- STATUS POST TEMPLATE -->
+    <div class="status-post-template current-post" id="status-post-template">
+        <div class="img-div status-post-profile-pic">
+            <img class="profile-pic" src="./images/profile-pics/pp1.jpeg">
+        </div>
+        <div class="name-time status-post-name-time">
+            <h3 class="person-Name">Sally</h3>
+            <p class="time-posted">1 MINUTE AGO</p>
+        </div>
+        <p class="status-info" id="status-info">Hi i am new here</p>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
