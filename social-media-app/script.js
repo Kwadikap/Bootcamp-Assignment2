@@ -121,24 +121,49 @@ const showDisplay = (display) => {
     display.style.display = 'flex';
 }
 
+
+// STORE ALL POSTS
+const allPosts = [];
+
+// AUTOMATICALLY DISPLAY ALL PREVIOUS POSTS
+
+
+// POST IDs
+let postID = 1;
+
+
+
 //Function that adds status post 
 const addPost = () => {
-    //store generic status post template body
-    const statusPostTemplate = document.getElementById('status-post-template');
-    statusPostTemplate.style.margin ='1rem';
+    
     //Store post typed by user
-    storedStatus = document.getElementById('status').value;
+    storedStatus = document.getElementById('status').value; 
 
-    //add user post to template body
-    const post = document.getElementById('status-info');
+    //Clone the Status-post-template
+    const postStatus = statusPostTemplate.cloneNode();
 
-    post.value = storedStatus;
+    //Store inner html of template inside clone
+    postStatus.innerHTML = statusPostTemplate.innerHTML;
+   
+    //CHANGE CLONE ID & INCREMENT postID variable
+    postStatus.id = postID++;
+    
+     //Target postStatus element that will be updated 
+    const post = postStatus.children[2];
 
-    //Get element you will insert post before
-    const firstPost = document.getElementById('current-post');
+    //update PostStatus element with status post that was typed by user
+    post.textContent = storedStatus;
 
-    //Add post to html by inserting before the current first post
-    firstPost.insertAdjacentElement('beforebegin', statusPostTemplate);
+
+    //MAKE POST VISIBLE
+    postStatus.style.display = "block";
+
+
+    //Display the post    
+    posts.prepend(postStatus);
+
+    //Store this post in array that will hold all previous posts from user
+    allPosts.push(postStatus);
 }
 
 
@@ -149,6 +174,10 @@ const uploadStatus = document.getElementById('upload-status');
 const statusModalOutter = document.getElementById('status-modal-outter');
 const uploadStatusButton = document.getElementById('upload-status-button');
 const uploadStatusGoBackButton = document.getElementById('upload-status-go-back-btn');
+const posts = document.getElementById('posts');
+//store generic status post template body
+const statusPostTemplate = document.getElementById('status-post-template');
+statusPostTemplate.style.marginTop ='1rem';
 
 
 //Stores status input
@@ -171,17 +200,23 @@ uploadStatus.addEventListener('click', function() {
 
 //Post status
 uploadStatusButton.addEventListener('click', function() {
-
+   
+    //Hide outter modal window after clicking post new status so new post can show 
     hideDisplay(statusModalOutter);
 
+    //Hide outter modal window after clicking post new status so new post can show 
     hideDisplay(modalOutter);
-
-    addPost();
     
+    //Call function that will perform post 
+    addPost();
+
+    //Set post input type area back to empty so previous post doesnt stay in type area next time a user wants to post
+    document.getElementById('status').value = "";
 })
 
 //Go back
 uploadStatusGoBackButton.addEventListener('click', function(){
     hideDisplay(statusModalOutter);
 });
+
 
