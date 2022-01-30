@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./landing-page.css">
+</head>
+<body>
+
+    <!-- CODE FOR LOG IN -->
+    <div class="block">
+        <div class="left-side">
+            <div class="left-content">
+                <h1 class="logo">freedomNET</h1>
+                <p class="slogan">Connect! Post! <br>#SHARE</p>
+            </div>
+        </div>
+        <div class="right-side" id="right-side">
+            <div class="right-content">
+                <input class="username" id="username" type="text" placeholder="Username...">
+                <input class="password" id="password" type="password" placeholder="Password...">
+                <div class="log-in-btn">
+                    <a href="#" class="log-in-button" id="log-in-button">Log in</a>
+                </div>
+                <div class="forgot-password-div">
+                    <a href="" class="forgot-password-link">Forgot password?</a>
+                </div>
+                <hr class="divider">
+                <div class="create-account-div">
+                    <button class="create-account-button">Create account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- CODE FOR SIGN UP WINDOW -->
+    <div class="modal-outter">
+        <div class="modal-inner">
+            <div class="block2">
+                <div class="signup-header">
+                    <div class="top">
+                        <h1 class="sign-up-logo">Sign Up</h1>
+                        <a href="#" class="close-button">x</a>
+                    </div>
+                    <div class="bottom"><p>Quick and easy</p></div>
+                </div>
+                <hr class="divider2">
+                <div class="account-info-div">
+                    <input type="text" class="first-name" placeholder="First name">
+                    <input type="text" class="last-name" placeholder="Last name">
+                    <input type="email" class="email" placeholder="Email">
+                    <input type="password" class="new-password" placeholder="New password">
+                </div>
+                <div class="gender">
+                    <div class="gender-header">Gender <b class="in-circle">?</b></div> <br>
+                    <div class="male-div">
+                        <label for="male">Male</label>
+                        <input type="radio" class="maleSelect" id="male-select" name="genderSelect" value="male" style="margin-left: 4rem;">
+                    </div>
+                    <div class="female-div">
+                        <label for="male">Female</label>
+                        <input type="radio" id="female-select" name="genderSelect" value="female" style="margin-left: 2.8rem;">
+                    </div>
+                    <div class="terms-and-agreements-div">
+                        <p class="terms-and-agreements" >By clicking Sign Up, you agree to our <a href="" class="terms">Terms</a> , 
+                            <a href="" class="terms">Data Policy</a> and <a href="" class="terms">Cookies Policy</a>. 
+                            You may receive SMS Notifications from us and can opt out any time.</p>
+                    </div>
+                    <div class="sign-up-div">
+                        <button class="sign-up-button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- CODE FOR VERYING EMAIL ADDRESS PAGE -->
+    <div class="verify-email-window">
+        <div class="top-bar">
+            <div class="site-logo">
+                <h1>fN</h1>
+            </div>
+        </div>
+
+        <div class="message-box">
+            <div class="block2">
+                <h1 class="verify-email-message">
+                    Enter verification code from your email
+                </h1>
+                <hr class="divider3">
+                <p class="verification-message">
+                    Verify this is your email by entering the code that was sent to 
+                </p>
+                <div class="verification-code-div">
+                    <input type="text" class="verification-code" placeholder="Enter code:">
+                </div>
+                <div class="send-email-again-div">
+                    <a href="" class="send-email-again">Send email again</a>
+                </div>
+               
+                <div class="message-box-buttons">
+                    <div class="verify-email-back-button-div">
+                    <button class="verify-email-back-button">Back</button>
+                </div>
+                
+                <div class="verify-email-button-div">
+                    <button class="verify-email-button">Continue</button>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./landing-page.js"></script>
+</body>
+</html>
